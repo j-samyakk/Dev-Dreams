@@ -1,0 +1,438 @@
+/* Start of HTML Elements */
+:root {
+  --dark-red: #7a0000;
+  --red: #bf121d;
+  --beige: #fdefd3;
+  --dark-blue: #002e47;
+  --blue: #d6e3d3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* End of HTML Elements */
+
+/* Start of Animations */
+
+@keyframes movingAnimation {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* End of Animation */
+
+/* Start Of Navbar */
+
+.myNavbar {
+  background-color: var(--red);
+  position: relative;
+  font-family: "Tsukimi Rounded", sans-serif;
+}
+
+.myNavbar div.logo {
+  cursor: pointer;
+  display: inline-flex;
+  padding: 0% 2%;
+}
+
+.myNavbar div.logo img {
+  width: 80px;
+}
+
+.myNavbar div.logo h1 {
+  display: inline-block;
+  margin: 5%;
+  color: var(--beige);
+  font-size: 30px;
+  transform: translateY(10px);
+}
+
+.nav-btns{
+  display: flex;
+  justify-content: end;
+}
+
+.myNavbar ul li {
+  list-style: none;
+  display: inline-flex;
+}
+
+.myNavbar .nav-btns ul li a {
+  margin: 0 20px;
+  color: var(--beige);
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 18px;
+  transition: all 0.3s ease-out;
+  padding: 15px 20px;
+}
+
+.nav-btns ul li a:hover,
+.nav-btns ul li a:focus,
+.nav-btns ul li a:active {
+  background-color: var(--dark-red);
+  transform: scale(1.1);
+}
+.fa-solid {
+  color: var(--beige);
+  padding: 5% 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding: 15px 20px;
+  }
+}
+/* End of Navbar */
+
+/* Start of Home Page */
+
+#home-page {
+  background-color: var(--beige);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainHead {
+  text-align: center;
+  width: 100%;
+  margin: 3% 3% 1%;
+  font-family: "Tsukimi Rounded", sans-serif;
+  font-size: 40px;
+}
+
+.sideContainer {
+  text-align: center;
+  font-family: "League Spartan", monospace;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sideContainer span {
+  color: var(--red);
+  font-weight: 700;
+  text-transform: lowercase;
+  margin: 2% 0;
+}
+
+.span1,
+.span3 {
+  font-size: 30px;
+}
+
+.span2 {
+  animation: movingAnimation 1s ease-out 0s 1 forwards;
+  font-size: 60px;
+}
+
+.mainImg img {
+  width: 600px;
+  margin: 1% 0;
+  animation: movingAnimation 1s ease-out 0s 1 forwards;
+}
+
+.ourClients {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.ourClients p {
+  width: 100%;
+  text-align: center;
+  margin: 2% 0;
+  font-size: 40px;
+  font-family: "Tsukimi Rounded", sans-serif;
+}
+
+.ourClients .carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourClients .carousel img {
+  width: 200px;
+}
+
+.ourClients .carousel img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* End of Home Page */
+
+/* Start of Services */
+
+#services {
+  background-color: var(--blue);
+  padding: 5%;
+  width: 100%;
+}
+
+.secondaryPageHeading {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+  color: var(--red);
+}
+
+.servicesContent {
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.servicesContent .servicesImg {
+  width: 40%;
+}
+
+.servicesContent .servicesImg img {
+  width: 100%;
+}
+
+.servicesContent .servicesText {
+  width: 50%;
+}
+
+.servicesContent .servicesText ul li {
+  padding: 3%;
+  font-family: "League Spartan", monospace;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* End of Services */
+
+/* Start of Why Choose Us */
+
+#whyChooseUs {
+  padding: 5%;
+  background-color: var(--beige);
+}
+
+.whyChooseUsPara {
+  width: 60%;
+  margin: 3% auto;
+  text-align: center;
+}
+
+.accordion {
+  width: 80%;
+  margin: auto;
+}
+
+/* End of Why Choose Us  */
+
+/* Start of Contact Us */
+
+#contactUs {
+  background-color: var(--blue);
+  padding: 5%;
+}
+
+.contactUsForm {
+  width: 60%;
+  position: relative;
+}
+
+.inputGroup {
+  font-family: "Segoe UI", sans-serif;
+  margin: 1em 0 1em 0;
+  position: relative;
+  width: 70%;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: var(--dark-blue);
+}
+
+.inputGroup :is(input:focus, input:valid) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: var(--blue);
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
+}
+
+.contactUsForm button {
+  border: none;
+  outline: none;
+  margin: 5% auto;
+  width: 40%;
+  position: absolute;
+  bottom: 20%;
+  left: 20%;
+  padding: 2%;
+  border-radius: 18px;
+  background: linear-gradient(
+    109.6deg,
+    rgb(99, 5, 5) 11.2%,
+    rgb(74, 96, 204) 100.2%
+  );
+  color: white;
+  font-family: "Tsukimi Rounded", sans-serif;
+  font-size: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.contactUsForm button:hover {
+ transform: scale(1.1);
+  box-shadow: 10px 10px 10px black; 
+}
+
+/* End of Contact Us */
+
+@media screen and (max-width:1024px){
+  .nav-btns{
+    justify-content: center;
+  }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px){
+  .mainImg img{
+    width: 400px;
+  }
+}
+
+@media screen and (min-width:430px) and (max-width:768px){
+
+  body{
+    width: 100%;
+  }
+
+  .mainImg img{
+    width: 400px;
+  }
+
+  .sideContainer .span1 ,.sideContainer .span3{
+    font-size: 20px;
+  }
+
+  .sideContainer .span2{
+    font-size: 40px ;
+  }
+
+  .ourClients .carousel img {
+    width: 150px;
+  }
+
+  .servicesContent ul li {
+    list-style-type: decimal;
+  }
+
+  .contactUsImg{
+    width: 40%;
+  }
+
+  .contactUsImg img {
+    width: 100%;
+  }
+
+  .contactUsForm button {
+    bottom:-23%;
+    left: 15%;
+  }
+}
+
+@media screen and (max-width:429px) {
+  body{
+    width: 100%;
+  }
+
+  .ourClients .carousel img{
+    width: 80px;
+  }
+
+  .servicesContent {
+    display: block;
+  }
+
+  .servicesContent .servicesImg{
+    width: 100%;
+  }
+
+  .servicesContent .servicesImg img {
+    width: 100%;
+  }
+
+  .servicesContent .servicesText {
+    width: 100%;
+  }
+
+  #whyChooseUsHeading{
+    font-size: 45px;
+  }
+
+  .whyChooseUsPara{
+    width: 100%;
+  }
+
+  .accordion{
+    width: 100%;
+  }
+
+  #contactUs{
+    padding-bottom: 20%;
+  }
+
+  .contactUsForm{
+    width: 100%;
+  }
+
+  .inputGroup{
+    width: 100%;
+  }
+
+  .contactUsForm button{
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .contactUsForm button:hover{
+    width: 100%;
+    left: 0;
+  }
+
+ .contactUsImg img {
+    display: none;
+  }
+}
