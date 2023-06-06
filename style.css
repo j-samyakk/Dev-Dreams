@@ -377,8 +377,23 @@
     width: 100%;
   }
 
+  #home-page{
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mainImg{
+    display: flex;
+    justify-content: center;
+  }
+
+  .mainImg img{
+    width: 400px;
+  }
+
   .ourClients .carousel img{
-    width: 80px;
+    width: 50px;
   }
 
   .servicesContent {
